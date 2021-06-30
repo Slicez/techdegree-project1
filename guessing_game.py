@@ -11,6 +11,7 @@ print("Welcome to Harold Number gussing game")
 name = input("What is your name?: ")
 print(name)
 
+
 def start_game():
     attempts = 1
     guess = random.randint(1,10)
@@ -32,12 +33,10 @@ def start_game():
                 attempts += 1
                 print("Your guess is to low! Try again: ")
     else:
-         print("You got the right number {}! the number was {} and it took you {} attempts. Congrats🎉!".format(name,Haguess,attempts))
+         print("You got the right number {}! the number was {} and it took you {} attempts. Congrats🎉!".format(name,guess,attempts))
     return attempts
 
 
 
 # Kick off the program by calling the start_game function.
 start_game()
-
-
