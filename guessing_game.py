@@ -7,8 +7,9 @@ Project 1 - Number Guessing Game
 
 import random
 # print a welcome screen 
-print("Welcome  to Harold Number gussing game")
-
+print("Welcome to Harold Number gussing game")
+username = input("Please enter your name?: ")
+print("Welcome {} Lets's begin!".format(username))
 
 def start_game():
     attempts = 1
@@ -32,11 +33,11 @@ def start_game():
             else:
                 print("You got the right number The number was {} and it took you {} tries. Good Job".format(username,random_numbers,attempts))
             return attempts
-username = input("Please enter your name?: ")
-print("Welcome {} Lets's begin!".format(username))
+
     
 
 
 
 # Kick off the program by calling the start_game function.
 start_game()
+
